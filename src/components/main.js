@@ -1,21 +1,20 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import LandingPage from './landingpage';
-import About from './aboutme';
-import Contact from './contact';
-import Projects from './projects';
-import Resume from './resume';
-
+import LandingPage from "./landingpage";
+import Acercademi from "./AcercaDeMi";
+import Contacto from "./Contacto";
+import Proyectos from "./Proyectos";
+import Curriculum from "./Curriculum";
 
 const Main = () => (
   <Switch>
     <Route exact path="/cv-portafolio/" component={LandingPage} />
-    <Route path="/aboutme" component={About} />
-    <Route path="/contact" component={Contact} />
-    <Route path="/projects" component={Projects} />
-    <Route path="/resume" component={Resume} />
+    <Route path="/acercademi" component={Acercademi} />
+    <Route path="/contacto" component={Contacto} />
+    <Route path="/proyectos" component={Proyectos} />
+    <Route path="/curriculum" component={Curriculum} />
   </Switch>
-)
+);
 
 export default Main;

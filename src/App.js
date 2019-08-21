@@ -14,19 +14,23 @@ class App extends Component {
             className="header-color"
             title={
               <Link
-                style={{ textDecoration: "none", color: "white" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white"
+                }}
                 to="/cv-portafolio/"
               >
-                MyPortfolio
+                <i className="fa fa-briefcase" />
+                Mi Portafolio
               </Link>
             }
             scroll
           >
             <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/curriculum">Currículum</Link>
+              <Link to="/acercademi">Acerca de mi</Link>
+              <Link to="/proyectos">Proyectos</Link>
+              <Link to="/contacto">Contacto</Link>
             </Navigation>
           </Header>
           <Drawer
@@ -35,15 +39,15 @@ class App extends Component {
                 style={{ textDecoration: "none", color: "black" }}
                 to="/cv-portafolio/"
               >
-                MyPortfolio
+                Mi Portafolio
               </Link>
             }
           >
             <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/curriculum">Currículum</Link>
+              <Link to="/acercademi">Acerca de mi</Link>
+              <Link to="/proyectos">Projectos</Link>
+              <Link to="/contacto">Contacto</Link>
             </Navigation>
           </Drawer>
           <Content>
