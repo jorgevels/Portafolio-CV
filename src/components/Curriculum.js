@@ -126,7 +126,6 @@ class Resume extends Component {
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2>Educación</h2>
-
             <Education
               startYear={2013}
               endYear={2018}
@@ -137,7 +136,7 @@ class Resume extends Component {
               startYear={2019}
               endYear={2020}
               schoolName="Platzi"
-              schoolDescription="Realice la Carrera de Arquitectura Frontend y Frontend con React."
+              schoolDescription="Realice la Carrera de Arquitectura Frontend y Frontend con React"
             />
             <hr
               style={{
@@ -152,9 +151,8 @@ class Resume extends Component {
               startYear={2000}
               endYear={2018}
               jobName="Primer trabajo"
-              jobDescription="Ingrese a las Fuerzas Militares como soldado Regular, posteriormente ascendi a Soldado Profesional y en los ultimos 8 años me desempeñe como Jefe de TIC'S en el Gaula Militar del Oriente Antioqueño."
+              jobDescription="Ingrese a las Fuerzas Militares como soldado Regular, posteriormente ascendi a Soldado Profesional y en los ultimos 8 años me desempeñe como Jefe de TIC'S en el Gaula Militar del Oriente Antioqueño"
             />
-
             <hr
               style={{
                 borderTop: "3px dotted #1e5271",
@@ -164,9 +162,7 @@ class Resume extends Component {
               }}
             />
             <h2>Habilidades</h2>
-
             <SkillsInfo skillIf="Durante mi formación como Ingeniero de Sistemas y Arquitecto Frontend, he desarrollado varios proyectos con: JavaScript, Html5, Sass, Css3, GitHub y React. Además, he utilizado los frameworks de Bootstrap y Materialize para crear productos funcionales con una muy buena experiencia de usuario." />
-
             <Skills skil1={`JavaScript:${"  "}60%`} progress={60} />
             <Skills skil2={`HTML: 80%`} progress={80} />
             <Skills skil3={`CSS: 70%`} progress={70} />

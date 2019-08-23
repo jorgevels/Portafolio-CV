@@ -9,12 +9,12 @@ class Landingpage extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
-              //src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
               src={Perfil}
               alt="avatar"
               className="avatar-img"
               style={{
-                height: "200px"
+                height: "200px",
+                marginTop: "-40px"
               }}
             />
             <div className="banner-text">

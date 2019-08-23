@@ -1,5 +1,6 @@
 .avatar-img {
-  padding-top: 4em;
+  /*   padding-top: 1em; */
+  /*   margin-top: -20px; */
 }
 body {
   font-family: "Lato", sans-serif;
@@ -33,7 +34,11 @@ body {
   background: -webkit-linear-gradient(to right, #4286f4, #373b44);
   background: linear-gradient(to right, #4286f4, #373b44);
   text-align: center;
+  height: 100vh;
 }
+/* .landing-grid {
+  height: 100%vh;
+} */
 
 .projects-grid {
   display: flex;
@@ -41,11 +46,84 @@ body {
   justify-content: center;
 }
 
+.projects-grid img {
+  height: 50px;
+}
+
+.projects-grid h2 {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  margin-top: 7px;
+  margin-bottom: 2px;
+  line-height: 0px !important;
+}
+
+.mdl-card {
+  font-family: "Lato" sans-serif;
+  justify-content: center;
+  align-content: center;
+  /*  background: rgb(255,255,255); */
+  background: transparent !important;
+  /* align-items: center; */
+}
+.mdl-button {
+  border-radius: 3px !important;
+  margin-left: 5px !important;
+  font-family: "Lato" !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  /* will-change: box-shadow; */
+}
+
+.mdl-button.mdl-button--colored {
+  color: white !important;
+  background-color: #95ca3e;
+  padding-left: 20px;
+  font-family: "Lato" sans-serif !important;
+  justify-content: space-between !important;
+  align-content: center !important;
+  text-align: center !important;
+}
+
+.mdl-button :hover {
+  background: black !important;
+  color: white;
+}
+
+.mdl-card__actions {
+  font-size: 16px;
+  line-height: normal;
+
+  padding: 4px !important;
+  font-family: "Lato" sans-serif !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  /* margin-left: 5px; */
+}
+.mdl-card__actions.mdl-card--border {
+  border-top: 0px !important;
+}
+
+.mdl-card__supporting-text {
+  color: white !important;
+  font-size: 1rem;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 16px 16px;
+  width: 95% !important;
+  padding: 10px 16px !important;
+  text-align: justify;
+}
 .contact-body {
   width: 100%;
   justify-content: center;
   padding-top: 2em;
   background: linear-gradient(to right, #1e5372, #4286f4, #1e5372);
+  /*  background: url("./assets/images/stars.svg"), #1b1b25; */
 }
 .mdl-grid {
   padding: 0px !important;
@@ -93,6 +171,57 @@ body {
   padding-right: 4rem;
 }
 
+.acerca-mi-body {
+  background: url("./assets/images/stars.svg"), #1b1b25;
+  width: 100%;
+  /* justify-content: center; */
+  padding-top: 0em;
+  /* color: white; */
+}
+
+.acerca-mi-grid {
+  text-align: justify;
+  /* justify-content: center; */
+  width: 90%;
+  height: 580px;
+  color: white;
+  /* margin-bottom: 20px; */
+}
+
+.acerca-me h4 {
+  text-align: center;
+  /* padding: auto; */
+  margin: 2px;
+  background-color: #82ad36;
+  border-radius: 5px;
+  /* width: 90%; */
+  text-align: justify;
+  text-align: center;
+  font-family: "Lato";
+}
+.acerca-me-tres h4 {
+  text-align: center;
+  /* padding: auto; */
+  margin: 2px;
+  background-color: #82ad36;
+  border-radius: 5px;
+  /* width: 90%; */
+  text-align: justify;
+  text-align: center;
+  font-family: "Lato";
+}
+
+.acerca-mi-grid hr {
+  border-top: 5px dotted #00b84e;
+  margin: auto;
+}
+.acerca-me p {
+  margin: 5px;
+}
+
+.acerca-me {
+  margin-top: -50px;
+}
 .resume-right {
   color: black;
   padding: -2em;
@@ -208,6 +337,7 @@ body {
   width: 75%;
   margin: auto;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .banner-text h1 {
@@ -249,18 +379,6 @@ body {
   display: block;
 }
 
-.acerca-me h4 {
-  text-align: center;
-
-  padding: auto;
-}
-
-.acerca-me hr {
-  border-top: 5px dotted #00b84e;
-
-  margin: auto;
-}
-
 .fa-briefcase {
   padding-right: 0.4rem;
 }
@@ -277,6 +395,9 @@ body {
 .fa-twitter {
   color: #006dbf;
   border: white;
+}
+.fa-js {
+  color: yellow;
 }
 
 @keyframes App-logo-spin {
@@ -298,16 +419,22 @@ body {
   }
   .banner-text {
     width: 90%;
+    height: 90%;
     justify-content: space-between;
   }
   .banner-text h1 {
     font-size: 40px;
   }
+
+  .banner-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .social-links {
     width: 100%;
   }
   .social-links i {
-    color: red;
+    /*  color: red; */
     font-size: 4em;
     padding: 8px;
   }
@@ -341,5 +468,11 @@ body {
     font-size: 30px;
     margin-top: 5px;
     margin-bottom: 2px;
+  }
+  .acerca-me {
+    margin-top: 40px;
+  }
+  .acerca-me p {
+    margin-top: 20px;
   }
 }
