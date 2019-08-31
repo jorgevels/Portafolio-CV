@@ -53,7 +53,14 @@ class Projects extends Component {
             <Button href="https://simcro.co" colored>
               website
             </Button>
-            <IconButton name="favorites" style={{ color: "red" }} />
+            {/*  <IconButton
+               name="favorites"
+              
+              style={{ color: "white", border: "red 1px solid" }}
+            /> */}
+
+            <i className="fa fa-heart" aria-hidden="true" />
+            {/*  <i className="fa fa-heart" aria-hidden="true" /> */}
           </CardActions>
           <CardMenu style={{ color: "red" }}>
             <IconButton className="share" name="share" />

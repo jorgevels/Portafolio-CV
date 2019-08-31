@@ -21,10 +21,11 @@ class Contact extends Component {
               }}
             >
               Soy una persona comprometida y con mucha responsabilidad. Una de
-              mis metas es ser líder de proyectos y pertenecer a grandes equipos
-              que desarrollan soluciones digitales alrededor del mundo. Por mi
-              faceta en la vida Militar, tengo gran habilidad para trabajar en
-              equipo y bajo presión y con altas capacidades de liderazco.
+              mis metas, es ser líder de proyectos y pertenecer a grandes
+              equipos que desarrollan soluciones digitales alrededor del mundo.
+              Por mi faceta en la vida Militar, tengo gran habilidad para
+              trabajar en equipo, bajo presión y con muchas capacidades de
+              liderazco.
             </p>
           </Cell>
           <Cell col={6}>

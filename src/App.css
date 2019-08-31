@@ -151,7 +151,7 @@ body {
 
 .mdl-button :hover {
   background: black !important;
-  color: white;
+  /* color: white; */
 }
 
 .mdl-card__actions {
@@ -458,6 +458,20 @@ body {
   padding-right: 0.4rem;
 }
 
+.fa-heart {
+  padding-left: 0.8rem;
+  font-size: 20px !important;
+  color: white;
+  cursor: pointer;
+}
+
+.share {
+  font-size: 20px !important;
+}
+.fa-heart:hover {
+  color: red;
+}
+
 .fa-whatsapp {
   color: #00b84e;
   font-weight: bold;
@@ -498,7 +512,7 @@ body {
     color: red;
     /*   background-color: white; */
     border-radius: 30px;
-    font-size: 30px !important;
+    font-size: 40px !important;
   }
   .projects-grid {
     flex-direction: column;
