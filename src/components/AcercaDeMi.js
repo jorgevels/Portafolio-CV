@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
-import Image1 from "../assets/images/dev.png";
-/* import Image2 from "../assets/images/dev1.png"; */
-import Image3 from "../assets/images/responsi.png";
+
 import Image4 from "../assets/images/te.png";
 import Image5 from "../assets/images/curioso.png";
 class About extends Component {

@@ -18,7 +18,7 @@ class App extends Component {
                   textDecoration: "none",
                   color: "white"
                 }}
-                to="/cv-portafolio/"
+                to="/"
               >
                 <i className="fa fa-briefcase" />
                 Mi Portafolio
@@ -33,25 +33,50 @@ class App extends Component {
               <Link to="/contacto">Contacto</Link>
             </Navigation>
           </Header>
+
           <Drawer
             title={
               <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/cv-portafolio/"
+                style={{
+                  drawerType: "slide",
+                  textDecoration: "none",
+                  color: "black",
+                  fontFamily: "Lato"
+                }}
+                to="/"
               >
+                {" "}
+                <i className="fa fa-briefcase" />
                 Mi Portafolio
               </Link>
             }
           >
             <Navigation>
-              <Link to="/curriculum">Currículum</Link>
-              <Link to="/acercademi">Acerca de mi</Link>
-              <Link to="/proyectos">Projectos</Link>
-              <Link to="/contacto">Contacto</Link>
+              <Link to="/curriculum">
+                <i className="fa fa-graduation-cap" aria-hidden="true" />
+                Currículum{" "}
+              </Link>
+              <Link to="/acercademi">
+                {" "}
+                <i className="fa fa-user" aria-hidden="true" />
+                Acerca de mi
+              </Link>
+              <Link to="/proyectos">
+                {" "}
+                <i className="fa fa-building" aria-hidden="true" />
+                Projectos
+              </Link>
+              <Link to="/contacto">
+                {" "}
+                <i className="fa fa-id-card" aria-hidden="true" />
+                Contacto
+              </Link>
             </Navigation>
           </Drawer>
+
           <Content>
             <div className="page-content" />
+
             <Main />
           </Content>
         </Layout>

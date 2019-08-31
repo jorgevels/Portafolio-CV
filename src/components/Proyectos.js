@@ -23,7 +23,6 @@ class Projects extends Component {
           style={{
             width: "300px",
             margin: "auto",
-
             alignItems: "center"
           }}
         >
@@ -57,21 +56,40 @@ class Projects extends Component {
             <IconButton name="favorites" style={{ color: "red" }} />
           </CardActions>
           <CardMenu style={{ color: "red" }}>
-            <IconButton name="share" />
+            <IconButton className="share" name="share" />
           </CardMenu>
         </Card>
 
-        <Card shadow={5} style={{ width: "450px", margin: "auto" }}>
-          <CardTitle
+        <Card
+          shadow={5}
+          style={{
+            width: "300px",
+            margin: "auto",
+            alignItems: "center"
+          }}
+        >
+          <img
+            src={Simcro}
+            alt="avatar"
+            className="avatar-img"
+            style={{
+              height: "370px"
+            }}
+          />
+          <h2>SimonDice</h2>
+
+          {/* <CardTitle
             style={{
               color: "#fff",
               height: "176px",
+              alignItems: "center",
               background:
                 "url(https://scontent.feoh5-1.fna.fbcdn.net/v/t1.0-9/48339939_10213203758836175_2681731017881944064_n.jpg?_nc_cat=102&_nc_oc=AQlVR5NqYv4NaQvxpJDXTdeKZUIpYRacE2a3pZUl_KHVBkOM3qI6eXRec7HhOvfnrYk&_nc_ht=scontent.feoh5-1.fna&oh=d9caab0d207f5f57aad745aaf11342fb&oe=5DD8C6E0) center / cover"
             }}
           >
             Simon Dice
-          </CardTitle>
+          </CardTitle> */}
+
           <CardText>
             Simon Dice es una aplicacion web con caracteristicas de una PWA,
             este Juego consiste en una secuencia de colores que el usuario debe
@@ -94,8 +112,24 @@ class Projects extends Component {
           </CardMenu>
         </Card>
 
-        <Card shadow={5} style={{ width: "450px", margin: "auto" }}>
-          <CardTitle
+        <Card
+          shadow={5}
+          style={{
+            width: "300px",
+            margin: "auto",
+            alignItems: "center"
+          }}
+        >
+          <img
+            src={Simcro}
+            alt="avatar"
+            className="avatar-img"
+            style={{
+              height: "370px"
+            }}
+          />
+          <h2>GatStore</h2>
+          {/* <CardTitle
             style={{
               color: "#fff",
               height: "176px",
@@ -104,7 +138,7 @@ class Projects extends Component {
             }}
           >
             GatStore
-          </CardTitle>
+          </CardTitle> */}
           <CardText>
             GatStore es una tienda de gatos, la cual le permite al usuario
             selecionar de una galeria el gatito que mas te guste y desde la

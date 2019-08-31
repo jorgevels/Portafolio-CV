@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
+/* import Layout from "./Layout"; */
+
 import LandingPage from "./landingpage";
 import Acercademi from "./AcercaDeMi";
 import Contacto from "./Contacto";
@@ -9,7 +11,8 @@ import Curriculum from "./Curriculum";
 
 const Main = () => (
   <Switch>
-    <Route exact path="/cv-portafolio/" component={LandingPage} />
+    <Route exact path="/" component={LandingPage} />
+    {/*  <Route exact="/cv-portafolio/" component={LandingPage} /> */}
     <Route path="/acercademi" component={Acercademi} />
     <Route path="/contacto" component={Contacto} />
     <Route path="/proyectos" component={Proyectos} />

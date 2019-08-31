@@ -14,19 +14,84 @@ body {
 .mdl-layout__header {
   min-height: 48px !important;
 }
-.mdl-layout__drawer-button {
-  margin: 0 !important;
-  display: block !important;
-}
 
 .header-color {
   font-family: "Lato", sans-serif;
   background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
 }
 
+.mdl-layout__drawer-button {
+  margin: 0 !important;
+  display: none !important;
+}
+
+.mdl-layout__drawer {
+  font-family: "Lato", sans-serif;
+  width: 240px;
+  height: 100% !important;
+  max-height: 100%;
+  /* position: fixed !important; */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  border-right: 2px solid yellow !important;
+  background: #212529 !important;
+  z-index: 200 !important;
+  transition: transform 0.3s ease-out !important;
+  /* z-index: 0 !important; */
+}
+
+.mdl-layout__title,
+.mdl-layout__drawer > .mdl-layout-title a {
+  /*   line-height: 56px; */
+  line-height: 5px !important;
+
+  /*  padding-left: 16px; */
+  color: white !important;
+}
+.mdl-layout-title a {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.mdl-layout__drawer .mdl-navigation {
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-items: stretch;
+  padding-top: 0px;
+  color: white !important;
+  line-height: 0px !important;
+}
+.mdl-layout__drawer .mdl-navigation a {
+  color: white !important;
+  margin-top: 10px !important;
+}
+
+.mdl-layout__drawer .mdl-navigation {
+  margin-top: -30px !important;
+}
+
+.mdl-layout__title a {
+  color: white !important;
+}
+
 .mdl-navigation__link {
   font-weight: 700 !important;
   opacity: 1 !important;
+  line-height: 0px !important;
+}
+
+.mdl-layout__content {
+  -ms-flex: 0 1 auto;
+  position: relative;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  flex-grow: 1;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
 }
 
 .landing-grid {
@@ -36,9 +101,6 @@ body {
   text-align: center;
   height: 100vh;
 }
-/* .landing-grid {
-  height: 100%vh;
-} */
 
 .projects-grid {
   display: flex;
@@ -382,6 +444,20 @@ body {
 .fa-briefcase {
   padding-right: 0.4rem;
 }
+
+.fa-graduation-cap {
+  padding-right: 0.4rem;
+}
+.fa-user {
+  padding-right: 0.4rem;
+}
+.fa-building {
+  padding-right: 0.4rem;
+}
+.fa-id-card {
+  padding-right: 0.4rem;
+}
+
 .fa-whatsapp {
   color: #00b84e;
   font-weight: bold;
@@ -410,9 +486,19 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .mdl-layout__drawer-button {
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  /* .name {
+    background-color: green !important;
+  } */
   .material-icons {
-    display: none;
     color: red;
+    /*   background-color: white; */
+    border-radius: 30px;
+    font-size: 30px !important;
   }
   .projects-grid {
     flex-direction: column;
